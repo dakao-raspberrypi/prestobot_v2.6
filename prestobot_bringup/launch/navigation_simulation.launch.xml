@@ -10,9 +10,9 @@
     <arg name="z_pose" default="0.01" />
     <!-- Navigation arguments -->
     <arg name="output_topic" default="/diff_drive_controller/cmd_vel" />
-    <arg name="map_path" default="$(find-pkg-share prestobot_bringup)/maps/LR001.yaml" />
+    <arg name="map_path" default="$(find-pkg-share prestobot_navigation)/maps/map.yaml" />
     <!-- Let variables for cleaner paths and commands -->
-    <let name="rviz_config_path" value="$(find-pkg-share prestobot_navigation/rviz/navigation_config.rviz" />
+    <let name="rviz_config_path" value="$(find-pkg-share prestobot_navigation)/rviz/navigation_config.rviz" />
 
     <!-- Launch robot description -->
     <include file="$(find-pkg-share prestobot_description)/launch/robot_description.launch.xml" >
